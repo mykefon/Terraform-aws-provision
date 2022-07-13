@@ -1,2 +1,2 @@
 # Terraform-aws-provision
-Adding terraform configurations to different services over time 
+Adding terraform configurations for different aws resources/services over time
