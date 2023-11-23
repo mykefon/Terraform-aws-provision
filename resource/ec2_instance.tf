@@ -4,7 +4,7 @@ module "ec2_instance" {
 
   name = "ec2-instance"
 
-  ami                    = "ami-eto00h3n3s922" #specify the OS ami ID 
+  ami   = var.ami.default.id #specify the variable path 
   instance_type          = "t2.micro"     # free tier eligible 
   key_name               = "keypair.pem" #ssh key
   monitoring             = true
