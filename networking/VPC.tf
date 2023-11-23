@@ -1,5 +1,6 @@
-resource "aws_default_vpc" "default" {
-  tags = {
-    Name = "Default VPC"
-  }
+resource "aws_vpc" "myvpc"{
+    cidr_block = "10.10.0.0/16"
+    tags = {
+       Name = "myvpc"
+       Environment = "dev"
 }
